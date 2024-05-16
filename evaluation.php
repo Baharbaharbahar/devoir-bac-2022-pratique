@@ -20,6 +20,7 @@ else{
     }else{
         $d=date('Y-m-d');
         $sql2="insert into evaluation values('$d','$npermis','$m','$s','$co','$con'); ";
+        // echo $sql2;
         $res2=mysqli_query($conn,$sql2);
         if (mysqli_affected_rows($conn)>0){
             echo "Evaluation enregistrée avec succès";

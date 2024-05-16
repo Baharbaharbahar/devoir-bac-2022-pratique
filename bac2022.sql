@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 16 mai 2024 à 16:34
+-- Généré le : jeu. 16 mai 2024 à 20:11
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -35,6 +35,17 @@ CREATE TABLE `evaluation` (
   `conduite` int(11) NOT NULL,
   `confort` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `evaluation`
+--
+
+INSERT INTO `evaluation` (`numPermis`, `idModele`, `dateTest`, `securite`, `conduite`, `confort`) VALUES
+('21/12345', 15, '2022-05-23 14:14:56', 5, 5, 5),
+('21/12345', 26, '2022-05-23 14:58:30', 5, 5, 5),
+('21/12345', 38, '2022-05-23 14:58:30', 5, 5, 5),
+('33/44444', 15, '2022-05-23 14:21:19', 5, 5, 5),
+('33/44444', 38, '2022-05-23 15:18:13', 5, 5, 5);
 
 -- --------------------------------------------------------
 
@@ -76,7 +87,10 @@ CREATE TABLE `testeur` (
 INSERT INTO `testeur` (`numPermis`, `nom`, `prenom`, `genre`) VALUES
 ('21/12345', 'Brini', 'Samir', 'M'),
 ('33/44444', 'Zaghdane', 'Olfa', 'F'),
-('58/98765', 'Krimi', 'Fethi', 'M');
+('58/98765', 'Krimi', 'Fethi', 'M'),
+('77/74774', 'krayemss', 'bahaeddiness', ''),
+('77/77774', 'krayems', 'bahaeddines', ''),
+('77/77777', 'krayem', 'bahaeddine', '');
 
 --
 -- Index pour les tables déchargées
