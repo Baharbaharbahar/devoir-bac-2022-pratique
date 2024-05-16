@@ -2,7 +2,7 @@
 $server="localhost";
 $username="root";
 $password="";
-$bd="bd2022";
+$bd="bac2022";
 
 
 ?>

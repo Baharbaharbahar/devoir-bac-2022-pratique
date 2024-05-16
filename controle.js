@@ -1,25 +1,12 @@
 function alpha(ch) {
     ch = ch.toUpperCase();
-    const car = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
     for (let i = 0; i < ch.length; i++) {
-      if (car.indexOf(ch[i]) < 0) {
+    if (ch.charAt(i)<"A"||ch.charAt(i)>"Z") {
         return false;
-      }
+    }
     }
     return true;
-  }
-// function numerique(ch) {
-//     const car = "0123456789";
-//     for (let i = 0; i < ch.length; i++) {
-//       if (car.indexOf(ch[i]) < 0) {
-//         return false;
-//       }
-//     }
-//     return true;
-//   }
-  
-
-
+}
 function verif1(){
     pe=document.getElementById("pe").value;
     n=document.getElementById("n").value;
